@@ -1,0 +1,181 @@
+@media only screen and  (max-width:600px) {
+    
+body{
+background-color: hsl(0, 0%, 8%);
+}
+main{
+    background-color:hsl(0, 0%, 12%);
+    text-align: center;
+    margin-top: 100px;
+    border-radius: 20px;
+    height: 550px;
+    font-family: "Inter Thin";
+    margin-bottom: 50px;
+}
+img{
+    border-radius: 100px;
+    height: 100px;
+    width: 100px;
+    margin-top: 20px;
+}
+h1{
+    color: white;
+}
+h4{
+color: hsl(75, 94%, 57%);
+margin-top: -20px;
+}
+p{
+ color: white;
+}
+section{
+    display: block;
+    border: none;
+    color: white;
+}
+section div{
+    width: 250px;
+    background-color: hsl(0, 0%, 20%);
+    justify-content: space-between;
+    height: 10px;
+    border-radius: 7px;
+    margin: auto;
+    margin-bottom: 20px;
+    padding-top: 15px;
+    padding-bottom: 20px;
+}
+section div:hover{
+    cursor: pointer;
+    background-color: hsl(75, 94%, 57%);
+    color: hsl(0, 0%, 8%);
+    font-weight: 800;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+
+}
+/*destop view*/
+
+@media only screen and (min-width:650px) {
+    
+body{
+background-color: hsl(0, 0%, 8%);
+}
+main{
+    background-color:hsl(0, 0%, 12%);
+    text-align: center;
+    margin: auto;
+    border-radius: 20px;
+    height: 550px;
+    font-family: "Inter Thin";
+    width: 400px;
+    margin-top: 15px;
+}
+img{
+    border-radius: 100px;
+    height: 100px;
+    width: 100px;
+    margin-top: 20px;
+}
+h1{
+    color: white;
+}
+h4{
+color: hsl(75, 94%, 57%);
+margin-top: -20px;
+}
+p{
+ color: white;
+}
+section{
+    display: flex;
+    flex-direction: column;
+    border: none;
+    color: white;
+    gap: 20px;
+}
+section button{
+    width: 150px;
+    background-color: hsl(0, 0%, 20%);
+    justify-content: center;
+    height: 10px;
+    border: none;
+    border-radius: 10px;
+    margin: auto;
+    color: hsl(75, 94%, 57%);
+    align-items: center;
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 25px;
+    text-transform: uppercase;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+section button:hover{
+    cursor: pointer;
+    background-color: hsl(75, 94%, 57%);
+    color: hsl(0, 0%, 8%);
+    font-weight: 800;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+/* Add animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0.95);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes hoverPulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+/* Apply animations */
+main {
+    animation: fadeIn 0.8s ease-in-out;
+}
+
+img {
+    animation: fadeIn 1s ease-in-out;
+}
+
+h1, h4, p {
+    animation: slideIn 0.6s ease-in-out;
+}
+
+section button {
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+section button:hover {
+    animation: hoverPulse 0.4s ease-in-out;
+}
+
+}
